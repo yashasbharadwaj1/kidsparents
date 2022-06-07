@@ -1,0 +1,18 @@
+{% extends "../base/base.html" %}
+{% block title %}Profile{% endblock %}
+{% block content %}
+{% include "../base/nav-main.html" %}
+<div class="container">
+    <section class="jumbotron text-center bg-white">
+        <div class="container">
+            <h1>User Dashboard</h1>
+            <p class="lead text-muted">
+                we are working on new features meanwhile checkout your saved posts
+            <p>
+                <a href="{%url "account:logout" %}" class="btn btn-primary my-2">Logout</a>
+            </p>
+        </div>
+    </section>
+</div>
+{% include "base/footer.html" %}
+{% endblock %}
