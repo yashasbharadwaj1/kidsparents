@@ -47,8 +47,8 @@
     </ul>
     {% else %}
     <nav>
-        <a class="p-2 text-dark" href="account/signup">Register</a>
-        <a class="p-2 text-dark" href="account/signin">Login</a>
+        <a class="p-2 text-dark" href="{% url "account:signup" %}">Register</a>
+        <a class="p-2 text-dark" href="{% url "account:signin" %}">Login</a>
     </nav>
     {% endif %}
 </div>
